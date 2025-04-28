@@ -27,11 +27,3 @@ Construir un modelo predictivo eficaz y justo que permita detectar tempranamente
 ---
 
 > Este proyecto sigue la metodología **TDSP (Team Data Science Process)** y utiliza herramientas como Python, Scikit-learn, MLflow y Fairlearn para el desarrollo y evaluación del modelo.
-
-
-Esta plantilla proporciona las siguientes carpetas y archivos:
-
-* `src`: acá debe ir el código o implementación del proyecto en Python.
-* `docs`: en esta carpeta se encuentran las plantillas de los documentos definidos en la metodología.
-* `scripts`: esta carpeta debe contener los scripts/notebooks que se ejecutarán.
-* `pyproject.toml`: archivo de definición del proyecto en Python.
