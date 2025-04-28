@@ -22,7 +22,7 @@ Construir un modelo predictivo eficaz y justo que permita detectar tempranamente
 - 👉 El código del proyecto se encuentra en la carpeta [`src`](./src)
 - 👉 La metodología está detallada en [`docs`](./docs)
 - 👉 Los scripts están dentro de la carpeta [`scripts`](./scripts)
-- 👉 La definición del proyecto está en el archivo [`project_charter.md`](./project_charter.md)
+- 👉 La definición del proyecto está en el archivo [`project_charter.md`](./docs/business_understanding/project_charter.md)
 
 ---
 
