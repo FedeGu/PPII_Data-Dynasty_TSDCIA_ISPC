@@ -7,7 +7,7 @@ Este proyecto desarrolló un modelo de machine learning para predecir el riesgo 
 El Accidente Cerebrovascular es una de las principales causas de mortalidad y discapacidad a nivel global. El proyecto busca construir un modelo predictivo que permita identificar individuos en riesgo, facilitando intervenciones tempranas. Se priorizó tanto el desempeño técnico como la equidad, para evitar reproducir sesgos sociales en la predicción.
 
 ## Descripción del Modelo
-El modelo final es un ensemble de clasificación basado en Random Forest optimizado. Se utilizó:
+El modelo final es un ensemble de clasificación basado en Random Forest optimizado, elegido por su capacidad de mejorar los resultados en comparación a la regresión logística inicial. Se utilizó:
 - Preprocesamiento de variables numéricas y categóricas.
 - Balanceo de clases mediante técnicas como oversampling.
 - Evaluación de fairness utilizando Fairlearn.

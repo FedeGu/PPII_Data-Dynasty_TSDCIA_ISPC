@@ -1,7 +1,7 @@
 # Reporte del Modelo Baseline
 
 ## Descripción del modelo
-El modelo baseline es una regresión logística básica desarrollada utilizando `Scikit-learn`. Su objetivo es establecer un rendimiento inicial contra el cual comparar modelos más sofisticados.
+El modelo baseline es una regresión logística básica, elegido por su simplicidad y facilidad de interpretación, desarrollado utilizando Scikit-learn. Su objetivo es establecer un rendimiento inicial contra el cual comparar modelos más sofisticados.
 
 ## Variables de entrada
 Las variables de entrada seleccionadas incluyen:
