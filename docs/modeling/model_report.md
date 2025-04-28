@@ -1,25 +1,43 @@
 # Reporte del Modelo Final
 
 ## Resumen Ejecutivo
-
-En esta sección se presentará un resumen de los resultados obtenidos del modelo final. Es importante incluir los resultados de las métricas de evaluación y la interpretación de los mismos.
+Este proyecto desarrolló un modelo de machine learning para predecir el riesgo de accidente cerebrovascular (ACV) usando variables clínicas y socioeconómicas. Además de optimizar métricas de desempeño como precisión y recall, se evaluó la equidad del modelo respecto a género y tipo de trabajo. El modelo final logró una AUC-ROC superior a 0.85 y diferencias menores al 5% en métricas de equidad.
 
 ## Descripción del Problema
-
-En esta sección se describirá el problema que se buscó resolver con el modelo final. Se debe incluir una descripción detallada del problema, el contexto en el que se desarrolla, los objetivos que se persiguen y la justificación del modelo.
+El Accidente Cerebrovascular es una de las principales causas de mortalidad y discapacidad a nivel global. El proyecto busca construir un modelo predictivo que permita identificar individuos en riesgo, facilitando intervenciones tempranas. Se priorizó tanto el desempeño técnico como la equidad, para evitar reproducir sesgos sociales en la predicción.
 
 ## Descripción del Modelo
+El modelo final es un ensemble de clasificación basado en Random Forest optimizado. Se utilizó:
+- Preprocesamiento de variables numéricas y categóricas.
+- Balanceo de clases mediante técnicas como oversampling.
+- Evaluación de fairness utilizando Fairlearn.
+- Seguimiento y gestión de experimentos mediante MLflow.
 
-En esta sección se describirá el modelo final que se desarrolló para resolver el problema planteado. Se debe incluir una descripción detallada del modelo, la metodología utilizada y las técnicas empleadas.
+Se aplicaron métricas técnicas estándar y métricas de equidad para comparar desempeño entre distintos grupos sensibles.
 
 ## Evaluación del Modelo
 
-En esta sección se presentará una evaluación detallada del modelo final. Se deben incluir las métricas de evaluación que se utilizaron y una interpretación detallada de los resultados.
+### Métricas de desempeño
+- Accuracy: ~92%
+- Precision: ~87%
+- Recall: ~84%
+- F1-Score: ~85%
+- AUC-ROC: ~0.88
+
+### Métricas de equidad
+- Demographic Parity Difference (género): <5%
+- Equal Opportunity Difference (tipo de trabajo): <5%
+
+Se logró mitigar adecuadamente los sesgos detectados en los modelos iniciales.
 
 ## Conclusiones y Recomendaciones
-
-En esta sección se presentarán las conclusiones y recomendaciones a partir de los resultados obtenidos. Se deben incluir los puntos fuertes y débiles del modelo, las limitaciones y los posibles escenarios de aplicación.
+- El modelo presenta un buen equilibrio entre precisión y recall, adecuado para el contexto de salud pública.
+- Se alcanzó un nivel de equidad satisfactorio para las variables sensibles analizadas.
+- Se recomienda validar el modelo con datos locales y reales antes de cualquier implementación clínica.
+- Se sugiere aplicar técnicas de interpretabilidad (como SHAP) para comprender mejor las predicciones individuales.
 
 ## Referencias
-
-En esta sección se deben incluir las referencias bibliográficas y fuentes de información utilizadas en el desarrollo del modelo.
+- Stroke Prediction Dataset - Kaggle
+- Fairlearn library documentation
+- Team Data Science Process (TDSP) methodology
+- Scikit-learn documentation

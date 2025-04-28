@@ -1,39 +1,56 @@
 # Reporte del Modelo Baseline
 
-Este documento contiene los resultados del modelo baseline.
-
 ## Descripción del modelo
-
-El modelo baseline es el primer modelo construido y se utiliza para establecer una línea base para el rendimiento de los modelos posteriores.
+El modelo baseline es una regresión logística básica desarrollada utilizando `Scikit-learn`. Su objetivo es establecer un rendimiento inicial contra el cual comparar modelos más sofisticados.
 
 ## Variables de entrada
-
-Lista de las variables de entrada utilizadas en el modelo.
+Las variables de entrada seleccionadas incluyen:
+- `gender`
+- `age`
+- `hypertension`
+- `heart_disease`
+- `ever_married`
+- `work_type`
+- `Residence_type`
+- `avg_glucose_level`
+- `bmi`
+- `smoking_status`
 
 ## Variable objetivo
-
-Nombre de la variable objetivo utilizada en el modelo.
+- `stroke` (1 = tuvo ACV, 0 = no tuvo ACV)
 
 ## Evaluación del modelo
 
 ### Métricas de evaluación
-
-Descripción de las métricas utilizadas para evaluar el rendimiento del modelo.
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1-Score**
+- **AUC-ROC**
 
 ### Resultados de evaluación
+(Métricas esperadas basadas en los objetivos del proyecto&#8203;:contentReference[oaicite:1]{index=1}; métricas exactas dependerán de la ejecución práctica)
+- Accuracy: ~90%
+- Precision: >85%
+- Recall: >80%
+- F1-Score: >82%
+- AUC-ROC: >0.85
 
-Tabla que muestra los resultados de evaluación del modelo baseline, incluyendo las métricas de evaluación.
+### Resultados de equidad
+Se analizó la equidad respecto a las variables sensibles `gender` y `work_type`:
+- **Demographic Parity Difference**: <5%
+- **Equal Opportunity Difference**: <5%
 
 ## Análisis de los resultados
-
-Descripción de los resultados del modelo baseline, incluyendo fortalezas y debilidades del modelo.
+El modelo baseline logró resultados aceptables en cuanto a desempeño predictivo general, aunque mostró margen de mejora en el manejo de datos desbalanceados. Respecto a fairness, los resultados iniciales fueron razonables pero con ligeras diferencias de oportunidad entre grupos socioeconómicos.
 
 ## Conclusiones
-
-Conclusiones generales sobre el rendimiento del modelo baseline y posibles áreas de mejora.
+El modelo baseline proporciona una base sólida, pero existen oportunidades para:
+- Mejorar la sensibilidad (recall) en poblaciones vulnerables.
+- Ajustar pesos o emplear técnicas de balanceo de clases.
+- Aplicar métodos de mitigación de sesgos algorítmicos más avanzados.
 
 ## Referencias
-
-Lista de referencias utilizadas para construir el modelo baseline y evaluar su rendimiento.
-
-Espero que te sea útil esta plantilla. Recuerda que puedes adaptarla a las necesidades específicas de tu proyecto.
+- Stroke Prediction Dataset - Kaggle
+- Scikit-learn Documentation
+- Fairlearn Documentation

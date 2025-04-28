@@ -2,57 +2,70 @@
 
 ## Nombre del Proyecto
 
-[Nombre del proyecto aquí]
+Predicción de Riesgo de Accidente Cerebrovascular con Equidad
 
 ## Objetivo del Proyecto
 
-[Descripción breve del objetivo del proyecto y por qué es importante]
+Desarrollar un modelo de machine learning capaz de predecir la probabilidad de que una persona sufra un accidente cerebrovascular (ACV) utilizando datos clínicos y socioeconómicos. Además de alcanzar un alto desempeño técnico, el proyecto busca evaluar y mitigar posibles sesgos, especialmente relacionados con género y condición laboral.
 
 ## Alcance del Proyecto
 
 ### Incluye:
 
-- [Descripción de los datos disponibles]
-- [Descripción de los resultados esperados]
-- [Criterios de éxito del proyecto]
+- Uso del dataset "Stroke Prediction Dataset" disponible en Kaggle.
+- Análisis exploratorio de datos clínicos, demográficos y socioeconómicos.
+- Desarrollo de modelos de clasificación supervisada.
+- Evaluación del rendimiento del modelo mediante métricas de desempeño técnico (Accuracy, Recall, Precision, F1-Score, AUC-ROC).
+- Evaluación de equidad utilizando métricas de fairness (Demographic Parity y Equal Opportunity).
+- Documentación del proceso en GitHub y seguimiento del trabajo en Jira o Trello.
 
 ### Excluye:
 
-- [Descripción de lo que no está incluido en el proyecto]
+- Implementación clínica real en hospitales o centros de salud.
+- Recolección de nuevos datos o conexión a bases de datos sanitarias externas.
+- Diagnóstico médico o validación con datos en tiempo real.
 
 ## Metodología
 
-[Descripción breve de la metodología que se utilizará para llevar a cabo el proyecto]
+Se seguirá el enfoque TDSP (Team Data Science Process), estructurado en las fases de entendimiento del negocio, exploración de datos, modelado, validación, despliegue y evaluación. Se emplearán herramientas como Python, Scikit-learn, MLflow y Fairlearn para el desarrollo técnico y análisis de equidad.
 
 ## Cronograma
 
 | Etapa | Duración Estimada | Fechas |
-|------|---------|-------|
+|------|--------------------|--------|
 | Entendimiento del negocio y carga de datos | 2 semanas | del 1 de mayo al 15 de mayo |
 | Preprocesamiento, análisis exploratorio | 4 semanas | del 16 de mayo al 15 de junio |
 | Modelamiento y extracción de características | 4 semanas | del 16 de junio al 15 de julio |
 | Despliegue | 2 semanas | del 16 de julio al 31 de julio |
 | Evaluación y entrega final | 3 semanas | del 1 de agosto al 21 de agosto |
 
-Hay que tener en cuenta que estas fechas son de ejemplo, estas deben ajustarse de acuerdo al proyecto.
+> Nota: Las fechas deben ajustarse si se modifica el calendario de trabajo.
 
 ## Equipo del Proyecto
 
-- [Nombre y cargo del líder del proyecto]
-- [Nombre y cargo de los miembros del equipo]
+- **Project Manager**: [Por asignar] – Responsable de la coordinación general del proyecto.
+- **Data Engineer**: [Por asignar] – Responsable de la carga, limpieza y transformación de datos.
+- **Data Scientist**: [Por asignar] – Encargado del desarrollo y evaluación de modelos.
+- **Ethical Reviewer**: [Por asignar] – Responsable de la evaluación de equidad y sesgos.
 
 ## Presupuesto
 
-[Descripción del presupuesto asignado al proyecto]
+No aplica. Proyecto académico/simulativo sin presupuesto asignado.
 
 ## Stakeholders
 
-- [Nombre y cargo de los stakeholders del proyecto]
-- [Descripción de la relación con los stakeholders]
-- [Expectativas de los stakeholders]
+- **Autoridades Sanitarias**: Usuarios finales interesados en políticas preventivas basadas en datos.
+- **Profesionales de la Salud**: Usuarios que aplicarán predicciones para intervenciones tempranas.
+- **Comunidad General**: Beneficiarios del proyecto a través de mejores diagnósticos y prevención.
+- **Equipo de Ciencia de Datos**: Desarrollo y control de calidad técnica y ética del modelo.
+
+Expectativas:
+- Alta precisión en predicciones.
+- Evaluación rigurosa de equidad.
+- Entregables claros y documentados.
 
 ## Aprobaciones
 
-- [Nombre y cargo del aprobador del proyecto]
-- [Firma del aprobador]
-- [Fecha de aprobación]
+- [Nombre del aprobador]: [Por asignar]
+- [Firma del aprobador]: ___________________
+- [Fecha de aprobación]: ___________________
